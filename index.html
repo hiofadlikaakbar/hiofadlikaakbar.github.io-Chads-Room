@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The Chads Room</title>
+ 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              jak: ["Plus Jakarta Sans"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-jak bg-[#373737] text-slate-900 antialiased">
+    <header>
+    <nav
+      class="top-0 fixed backdrop-blur-2xl shadow-xl h-20 z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <p
+            class="text-2xl ml-0 lg:ml-10 font-bold leading-relaxed inline-block py-2 text-orange-600"
+          >
+          <a href="#home">
+            The Chads Room
+          </a>
+          </p> 
+          <button
+            class="cursor-pointer text-xl mt-1 leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center rounded-lg bg-slate-900 lg:bg-transparent lg:shadow-none hidden"
+          id="collapse-navbar"
+        >
+          <ul
+            class="flex flex-col lg:gap-11 lg:flex-row list-none mr-5 lg:ml-auto"
+          >
+            <li class="flex items-center group">
+              <a
+                class="group-hover:text-orange-800 ease-out duration-200 text-orange-600 lg:text-white px-3 py-4 lg:py-2 flex items-center text-lg font-bold"
+                href="#home"
+              >
+                <p class="inline-block ml-2">Home</p>
+              </a>
+            </li>
+            <li class="flex items-center group">
+              <a
+                class="group-hover:text-orange-800 ease-out duration-200 text-orange-600 lg:text-white px-3 py-4 lg:py-2 flex items-center text-lg font-bold"
+                href="#about"
+                ><p class="inline-block ml-2">About</p></a
+              >
+            </li>
+            <li class="flex items-center group">
+              <a
+                class="group-hover:text-orange-800 ease-out duration-200 text-orange-600 lg:text-white px-3 py-4 lg:py-2 flex items-center text-lg font-bold"
+                href="#info"
+                ><p class="inline-block ml-2">Trainers</p></a
+              >
+            </li>
+            <li class="flex items-center group">
+              <a
+                class="group-hover:text-orange-800 ease-out duration-200 text-orange-600 lg:text-white px-3 py-4 lg:py-2 flex items-center text-lg font-bold"
+                href="#contact"
+                ><p class="inline-block ml-2">Contact</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <main id="home">
+      <div
+        class="relative border-b-4 border-orange-600 pt-16 pb-32 flex content-center min-h-[88vh] lg:min-h-[93vh] items-center justify-center"
+      >
+        <div class="absolute top-0 w-full h-full bg-cover">
+          <img
+            src="./assets/img/Chad.jpg"
+            alt="Gigachad hero"
+            class="w-full h-full pt-11 lg:pt-7"
+          />
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full mx-auto text-center">
+              <div class="text-center">
+                <h1
+                  class="text-white mt-36 lg:mt-13 font-bold px-1 text-4xl lg:text-6xl mb-6"
+                data-aos="fade-left" data-aos-duration="1500">
+                  Feel the power in your
+                  <span class="text-orange-600">inside</span>
+                </h1>
+                <p
+                  class="mb-5 text-md text-white font-light lg:text-xl px-3 lg:px-0"
+                data-aos="fade-left" data-aos-delay="50" data-aos-duration="2000">
+                  Change yourself to be stronger, fit, healthy, and cool in
+                  Chads Room
+                </p>
+                <div data-aos="zoom-in" data-aos-delay="1500" data-aos-duration="500">
+                <button
+                  class="px-4 w-30 py-2 text-semibold text-xl rounded-xl hover:text-slate-900 hover:bg-orange-700 ease-in duration-200 inline-block bg-orange-500 text-white" 
+             ><a href="#contact">Let's Go!</a>
+                 
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section
+        id="about" class="relative border-b-4 border-orange-600 py-20 bg-[#242424] text-white"
+      >
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full md:w-4/12 mx-auto px-4 mb-14 lg:mb-0">
+              <img
+                alt="Chad Pose"
+                class="max-w-full rounded-lg shadow-lg"
+                src="./assets/img/Chad.png"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                data-aos-offset="200"
+              />
+            </div>
+            <div class="w-full md:w-5/12 mx-auto px-4">
+              <div class="md:pr-12">
+                <h1 class="text-3xl font-bold" data-aos="fade-up" data-aos-offset="180">ABOUT OUR GYM</h1>
+                <p class="mt-4 text-lg max-w-md leading-relaxed text-white" data-aos="fade-up" data-aos-delay="150">
+                  Our gym teaches you to build an athletic, healthy and fit body
+                  in an easy and fun way
+                </p>
+                <ul class="list-none mt-6">
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-lg text-orange-500 mr-3"
+                          ><i class="fas fa-dumbbell text-2xl icon"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-white icon">Teach you professionally</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-lg text-orange-500 mr-3"
+                          ><i class="fa-solid fa-football text-2xl icon"></i></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-white icon">
+                          All kinds of your favorite sports are here
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-lg text-orange-500 mr-3"
+                          ><i class="fa-solid fa-book-medical text-2xl icon"></i
+                        ></span>
+                      </div>
+                      <div>
+                        <h4 class="text-white icon">
+                          Prioritizing 4 healthy 5 perfect
+                        </h4>
+                      </div>
+                    </div>
+                    <li class="py-2">
+                      <div class="flex items-center">
+                        <div>
+                          <span
+                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-lg text-orange-500 mr-3"
+                            ><i class="fa-solid fa-user-group text-xl icon"></i></span>
+                        </div>
+                        <div>
+                          <h4 class="text-white icon">
+                          Profesional trainers
+                          </h4>
+                        </div>
+                      </div>
+                    </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="info" class="pt-20 pb-48  border-b-4 border-orange-600 bg-[#242424]">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-3xl text-white font-semibold" data-aos="fade-up" data-aos-offset="150">Meet Our Trainers</h2>
+              <p class="text-lg leading-relaxed m-4 text-white" data-aos="fade-up" data-aos-delay="100">
+                Our trainers are here to teach you what you need to do to achieve the goals you want to achieve
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap">
+            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="Chad1"
+                  src="./assets/img/Chad3.jpg"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-white" data-aos="fade-up" data-aos-offset="100">Mr Chad</h5>
+                  <p class="mt-1 text-sm text-orange-500 uppercase font-semibold" data-aos="fade-up" data-aos-delay="100">
+                   Profesional Bodybuilder
+                  </p>
+                  <div class="mt-6 flex justify-center gap-1 h-icon">
+                    <button
+                      class="bg-black text-orange-500 hover:bg-blue-400 hover:text-white transition ease-in duration-150 w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <i class="fab fa-twitter"></i></button
+                    ><button
+                      class="bg-black text-orange-500 hover:bg-blue-600 hover:text-white transition ease-in duration-150 w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <i class="fab fa-facebook-f"></i></button
+                    >
+                    <button
+                      class="bg-black text-orange-500 hover:bg-purple-600 hover:text-white transition ease-in duration-150 w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <i class="fab fa-instagram"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="Chad1"
+                  src="./assets/img/Chad5.jpg"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-delay="100"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-white" data-aos="fade-up" data-aos-offset="100">Ernest Khalimov</h5>
+                  <p class="mt-1 text-sm text-orange-500 uppercase font-semibold" data-aos="fade-up" data-aos-delay="100">
+                   Bodybuilder Enthusiasm
+                  </p>
+                  <div class="mt-6 flex justify-center gap-1 h-icon">
+                    <button
+                      class="bg-black text-orange-500 hover:bg-blue-400 hover:text-white transition ease-in duration-150 w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <i class="fab fa-twitter"></i></button
+                    ><button
+                      class="bg-black text-orange-500 hover:bg-blue-600 hover:text-white transition ease-in duration-150 w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <i class="fab fa-facebook-f"></i></button
+                    >
+                    <button
+                      class="bg-black text-orange-500 hover:bg-purple-600 hover:text-white transition ease-in duration-150 w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <i class="fab fa-instagram"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <img
+                  alt="Chad1"
+                  src="./assets/img/Chad4.jpg"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-delay="200"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold text-white" data-aos="fade-up" data-aos-offset="100">Jon Thor</h5>
+                  <p class="mt-1 text-sm text-orange-500 uppercase font-semibold" data-aos="fade-up" data-aos-delay="100">
+                   Bodybuilder
+                  </p>
+                  <div class="mt-6 flex justify-center gap-1 h-icon">
+                    <button
+                      class="bg-black text-orange-500 hover:bg-blue-400 hover:text-white transition ease-in duration-150 w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <i class="fab fa-twitter"></i></button
+                    ><button
+                      class="bg-black text-orange-500 hover:bg-blue-600 hover:text-white transition ease-in duration-150 w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    > 
+                      <i class="fab fa-facebook-f"></i></button
+                    >
+                    <button
+                      class="bg-black text-orange-500 hover:bg-purple-600 hover:text-white transition ease-in duration-150 w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <i class="fab fa-instagram"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contact" class="pb-20 relative block bg-[#242424]">
+        <div class="container  mx-auto px-4 lg:pt-24 lg:pb-64">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4 pt-8 lg:pt-0">
+              <h2 class="text-4xl font-semibold text-white" data-aos="zoom-in" data-aos-duration="300" data-aos-offset="300">Wants to be a Chad?</h2>
+              <p class="text-lg leading-relaxed mt-4 mb-10 lg:mb-0 text-white" data-aos="zoom-in" data-aos-offset="300">
+                You can contact us by filling out the form below
+              </p>
+            </div>
+          </div>
+          
+        </div> 
+      </section> 
+      <section class="relative border-b-4 border-orange-600 block py-24 lg:pt-0 bg-[#242424]">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+            <div class="w-full lg:w-6/12 px-4">
+              <div
+                class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+              data-aos="zoom-out" data-aos-duration="400" data-aos-offset="400" >
+                <div class="flex-auto p-5 lg:p-10 rounded-lg bg-orange-500">
+                  <h4 class="text-3xl font-semibold text-center text-slate-900">Want to work with us?</h4>
+                  <p class="leading-relaxed mt-1 mb-4 text-center text-md text-slate-900">
+                    Complete this form and we will get back to you in 24 hours.
+                  </p>
+                  <form onsubmit="return check()">
+                  <div class="relative w-full mb-3 mt-8">
+                    <label
+                      class="block uppercase text-slate-900 text-xs font-bold mb-2"
+                      for="full-name"
+                      >Full Name</label
+                    ><input
+                      type="text"
+                      class="border-0 px-3 py-3 text-slate-900 bg-white rounded-lg text-sm shadow focus:outline-none w-full"
+                      placeholder="Full Name"
+                      id="fullname"
+                    />
+                  </div>
+                  <div class="relative  w-full mb-3">
+                    <label
+                      class="block uppercase text-slate-900 text-xs font-bold mb-2"
+                      for="email"
+                      >Email</label
+                    ><input
+                      type="email"
+                      class="border-0 px-3 py-3 text-slate-900 bg-white rounded-lg text-sm shadow focus:outline-none w-full"
+                      placeholder="Email"
+                      id="email"
+                    />
+                  </div>
+                  <div class="relative w-full mb-3">
+                    <label
+                      class="block uppercase text-slate-900 text-xs font-bold mb-2"
+                      for="message"
+                      >Message</label
+                    ><textarea
+                      rows="4"
+                      cols="80"
+                      class="border-0 px-3 py-3 text-slate-900 bg-white rounded-lg text-sm shadow focus:outline-none w-full"
+                      placeholder="Type a message..."
+                      id="textarea"
+                    ></textarea>
+                  </div>
+                  <div class="text-center mt-6">
+                    <button
+                      class="bg-gray-800 rounded-md hover:bg-slate-700 transition ease-out duration-200 text-white active:bg-slate-900 text-sm font-bold uppercase px-6 py-3 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                      type="submit"
+                      id="sub"
+                      
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="relative bg-[#242424] pt-8 pb-6">
+     
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl text-white font-semibold" data-aos="fade-up" data-aos-duration="300">Check more info</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              
+            </h5>
+            <div class="mt-6 mb-11 lg:mb-0 h-icon">
+              <button
+                class="bg-black text-orange-500 hover:bg-blue-400 hover:text-white transition ease-in duration-100 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+                <i class="flex fab fa-twitter"></i></button
+              ><button
+                class="bg-black text-orange-500 hover:bg-blue-600 hover:text-white transition ease-in duration-100  shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              > 
+                <i class="fab fa-facebook-f grid place-content-center"></i></button
+              ><button
+                class="bg-black text-orange-500 hover:bg-blue-900 hover:text-white transition ease-in duration-100 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                type="button"
+              >
+              <i class="fa-brands fa-linkedin grid place-content-center"></i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full lg:w-6/12 px-4 flex-none lg:flex lg:flex-wrap lg:items-center lg:justify-center">
+          
+                <ul class="mb-12">
+                  <h1 class="mb-3 font-bold text-xl text-white" data-aos="fade-up" data-aos-duration="400">INFO PAGES</h1>
+                  <li class="pt-4">
+                    <a
+                      class="text-white icon hover:text-orange-500 font-semibold block pb-2 text-sm"
+                      href="#home"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="pt-4">
+                    <a
+                      class="text-white icon hover:text-orange-500 font-semibold block pb-2 text-sm"
+                      href="#about"
+                      >About</a
+                    >
+                  </li>
+                  <li class="pt-4">
+                    <a
+                      class="text-white icon hover:text-orange-500 font-semibold block pb-2 text-sm"
+                      href="#info"
+                      >Trainers</a
+                    >
+                  </li>
+                  <li class="pt-4">
+                    <a
+                      class="text-white icon hover:text-orange-500 font-semibold block pb-2 text-sm"
+                      href="#contact"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div> 
+        <hr class="my-6 container mx-auto border-t w-full border-orange-500" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full px-4 mx-auto text-center">
+            <p class="text-white text-sm lg:text-lg">
+             Created by
+              <span
+                class="bg-gradient-to-bl from-blue-600 bg-clip-text via-red-600 to-yellow-500 text-transparent font-bold"
+                >Hio F.A</span
+              >
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // nav collapse
+function toggleNavbar(collapse) {
+  document.getElementById(collapse).classList.toggle("hidden");
+  document.getElementById(collapse).classList.toggle("block");
+}
+const icons = document.querySelectorAll('.icon')
+  icons.forEach((icon,i) => {
+      icon.dataset.aos = 'fade-right';
+      icon.dataset.aosDelay = i * 50;
+      icon.dataset.aosDuration = 300;
+  })
+  const icons2 = document.querySelectorAll('.h-icon')
+  icons2.forEach((icon,i) =>{
+    icon.dataset.aos = 'zoom-in-down';
+    icon.dataset.aosDelay = i * 50;
+    icon.dataset.aosDuration = 500;
+  })
+AOS.init()
+
+  
+  const input1 = document.querySelector('#fullname')
+  const input2 = document.querySelector('#email')
+  const textArea = document.querySelector('textarea')
+ 
+ function check(){
+    if(input1.value == ""){
+      Swal.fire({
+      icon: 'warning',
+      title: 'isi nama anda',
+    })
+      return false
+    } else if(input2.value == ""){
+      Swal.fire({
+      icon: 'warning',
+      title: 'isi email anda',
+    })
+      return false
+    } else if(textArea.value == ""){
+      Swal.fire({
+      icon: 'warning',
+      title: 'isi pesan anda',
+    })
+      return false
+    } else {
+      Swal.fire({
+      title: 'Thank You',
+      text: 'anda sekarang adalah seorang chads',
+      imageUrl: './assets/img/gigachad.jpg',
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: 'Custom image',
+})
+      return true
+    }
+ }
+  </script>
+
+</html>
